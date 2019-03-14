@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage">
+
+    <ImageButton
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:id="@+id/back_button"
+        android:background="#fff"
+        android:src="@drawable/backbuttonsc" />
+    <RelativeLayout
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_tv"
+            android:text="Sign Up"
+            android:fontFamily="@font/avenirmedium"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:fontFamily="@font/helveticaneueltstdroman"
+            android:id="@+id/usernameoremail_tv"
+            android:layout_marginTop="30dp"
+            android:gravity="left"
+            android:layout_marginLeft="65dp"
+            android:textColor="#0090ff"
+            android:text="USERNAME OR EMAIL"
+            android:layout_below="@id/login_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/usernameoremail_et"
+            android:backgroundTint="#c7c7c7"
+
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_below="@id/usernameoremail_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:fontFamily="@font/helveticaneueltstdroman"
+            android:id="@+id/password_tv"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:layout_marginLeft="65dp"
+            android:textColor="#0090ff"
+            android:text="PASSWORD"
+            android:layout_below="@id/usernameoremail_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:password="true"
+            android:id="@+id/password_et"
+            android:backgroundTint="#c7c7c7"
+
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_below="@id/password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="12sp"
+
+            android:fontFamily="@font/helveticaneueltstdroman"
+            android:id="@+id/reenter_password_tv"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:layout_marginLeft="65dp"
+            android:textColor="#0090ff"
+            android:text="RE-ENTER PASSWORD"
+            android:layout_below="@id/password_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:password="true"
+            android:id="@+id/reenter_password_et"
+            android:backgroundTint="#c7c7c7"
+
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:layout_below="@id/reenter_password_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:elevation="0dp"
+        android:textSize="18sp"
+        android:id="@+id/signup_button"
+        android:fontFamily="@font/avenirbold"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_rect_blue"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
